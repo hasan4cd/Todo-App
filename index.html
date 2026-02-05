@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Images/todo-app-icon.avif" type="image/x-icon">
   <title>Todo App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="parent">
-      <h1>Todo App</h1>
-      <div class="child">
-        <input type="text" id="inputField" placeholder="Enter your todo...">
-        <button onclick="addTodo()">Add & Update</button>
-      </div>
-      <ul id="todoList"></ul>
+  <div id="parent">
+    <h1>Todo App</h1>
+    <div class="child">
+      <input type="text" id="inputField" placeholder="Enter your todo...">
+      <button onclick="addTodo()">Add & Update</button>
     </div>
-    <script src="script.js"></script>
+    <ul id="todoList"></ul>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
